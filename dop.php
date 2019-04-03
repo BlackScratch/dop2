@@ -1,4 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Доп задание Артёму Прыгину</title>
+</head>
+<body>
 <?php
+mb_internal_encoding("UTF-8");
+
+
 date_default_timezone_set('moscow');
 echo "Сейчас минут ". $minuteNow = date('i', time());
 echo '<br>';
@@ -67,15 +80,18 @@ else{
 }
 ?>
 <script type="text/javascript">
-var interval = setInterval("location.reload(true)", 1000);
+    var interval = setInterval("location.reload(true)", 1000);
 </script>
 
 <?php
 if ((15 % 2)==0 && (15 % 3 != 0)){
-echo '<br>';
-echo "<div <b>норм три</b></div>";
-echo '<br>';
+    echo '<br>';
+    echo "<div <b>норм три</b></div>";
+    echo '<br>';
 
 
 }
 ?>
+
+</body>
+</html>
